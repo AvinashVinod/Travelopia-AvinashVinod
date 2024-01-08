@@ -10,13 +10,13 @@ function toggleParagraph() {
   if (isTruncated) {
       // If currently showing less text, switch to full text
       paragraph.textContent = paragraph.getAttribute('data-full-text');
-      button.textContent = 'Show Less 🡹';
+      button.textContent = 'Show Less ⇧';
       arrowIcon.textContent = 'arrow_upward';
   } else {
       // If currently showing full text, switch to truncated text
       var truncatedText = paragraph.textContent.slice(0, 300) + '...';
       paragraph.textContent = truncatedText;
-      button.textContent = 'Show More 🡻';
+      button.textContent = 'Show More ⇩';
       arrowIcon.textContent = 'arrow_downward';
   }
 }
