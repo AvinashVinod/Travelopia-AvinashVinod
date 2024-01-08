@@ -33,15 +33,15 @@ if (!button) {
   button.id = 'toggleButton';
   button.onclick = toggleParagraph;
 
-  // Create arrow icon
-  var arrowIcon = document.createElement('span');
-  arrowIcon.className = 'material-symbols-outlined';
-  arrowIcon.id = 'arrow-icon';
-  arrowIcon.textContent = 'arrow_downward';
+  // // Create arrow icon
+  // var arrowIcon = document.createElement('span');
+  // arrowIcon.className = 'material-symbols-outlined';
+  // arrowIcon.id = 'arrow-icon';
+  // arrowIcon.textContent = 'arrow_downward';
 
-  // Append arrow icon and button after the paragraph
-  paragraph.insertAdjacentElement('afterend', button);
-  button.appendChild(arrowIcon); // Append arrow icon as a child of the button
+  // // Append arrow icon and button after the paragraph
+  // paragraph.insertAdjacentElement('afterend', button);
+  // button.appendChild(arrowIcon); // Append arrow icon as a child of the button
 }
 
 // Initial setup to show only the first 300 characters

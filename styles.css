@@ -65,7 +65,9 @@ nav .nav_right .phone-container::before {
 }
 
 
-nav .nav_right .phone {}
+nav .nav_right .phone-container .phone {
+    padding: 5px 0 0;
+}
 
 nav .nav_right .nav_ham {
     position: relative;
@@ -201,6 +203,7 @@ nav .nav_right .nav_ham .menu {
 
 #three .three_first .three_para {
     color: rgb(0, 168, 182);
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
     font-weight: 900;
 }
