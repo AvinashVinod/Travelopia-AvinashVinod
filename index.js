@@ -2,7 +2,6 @@
 function toggleParagraph() {
   var paragraph = document.getElementById('paragraph');
   var button = document.getElementById('toggleButton');
-  var arrowIcon = document.getElementById('arrow-icon');
 
   // Check if the paragraph is currently showing less text
   var isTruncated = paragraph.textContent.includes('...');
