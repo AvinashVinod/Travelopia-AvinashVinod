@@ -10,13 +10,11 @@ function toggleParagraph() {
       // If currently showing less text, switch to full text
       paragraph.textContent = paragraph.getAttribute('data-full-text');
       button.textContent = 'Show Less ⇧';
-      arrowIcon.textContent = 'arrow_upward';
   } else {
       // If currently showing full text, switch to truncated text
       var truncatedText = paragraph.textContent.slice(0, 300) + '...';
       paragraph.textContent = truncatedText;
       button.textContent = 'Show More ⇩';
-      arrowIcon.textContent = 'arrow_downward';
   }
 }
 
@@ -31,18 +29,6 @@ if (!button) {
   button = document.createElement('button');
   button.id = 'toggleButton';
   button.onclick = toggleParagraph;
-
-  // // Create arrow icon
-  // var arrowIcon = document.createElement('span');
-  // arrowIcon.className = 'material-symbols-outlined';
-  // arrowIcon.id = 'arrow-icon';
-  // arrowIcon.textContent = 'arrow_downward';
-
-  // // Append arrow icon and button after the paragraph
-  // paragraph.insertAdjacentElement('afterend', button);
-  // button.appendChild(arrowIcon); // Append arrow icon as a child of the button
 }
-
-// Initial setup to show only the first 300 characters
 var truncatedText = paragraph.textContent.slice(0, 300) + '...';
 paragraph.textContent = truncatedText;
